@@ -1,30 +1,21 @@
 function calcular () {
     /* Elementos del DOM */
-    const cantidad1 = document.getElementById('cantidad1').value;
-    const precio1 = document.querySelector('#precio1').textContent;
-    
-    const cantidad2 = document.getElementById('cantidad2').value;
-    const precio2 = document.querySelector('#precio2').textContent;
-
-    const cantidad3 = document.getElementById('cantidad3').value;
-    const precio3 = document.querySelector('#precio1').textContent;
-
+    const cantidades = document.getElementsByName('cantidad');
+    const precios = document.querySelectorAll('[name=precio]');
+    const importes = document.querySelectorAll('[name=importe]');
+   
     /* Variables */
-    let importe1;
-    let importe2;
-    let importe3;
-    let total;
+    let total = 0;
 
     /* Calculos */
-    importe1 = cantidad1 * precio1;
-    importe2 = cantidad2 * precio2;
-    importe3 = cantidad3 * precio3;
+    for(let i=0; i < cantidades.length; i++) {
+        const importe = Number(cantidades[i].value) * Number(precios[i].textContent);
+        total += importe;
 
-    total = importe1 + importe2 + importe3;
+        /*Mostrar los importes*/
+        importes[i].textContent = importe;
+    }
 
-    /* Mostrar resultados */
-    document.querySelector('#importe1').textContent = importe1;
-    document.querySelector('#importe2').textContent = importe2;
-    document.querySelector('#importe3').textContent = importe3;
+
     document.querySelector('#total').textContent = total;
 }
