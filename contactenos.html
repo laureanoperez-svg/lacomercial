@@ -12,24 +12,23 @@
     </header>
     <nav class="menu">
         <div class="contenedor">
-        <ul class="menu-flex">
-            <li><a href="./">Inicio</a></li>
-            <li><a href="./nosotros.html">Nosotros</a></li>
-            <li><a href="./productos.html">Productos</a></li>
-            <li><a href="./contactenos.html">Contáctenos</a></li>
-        </ul>
+            <ul class="menu-flex">
+                <li><a href="./">Inicio</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./contactenos.html">Contáctenos</a></li>
+            </ul>
         </div>
     </nav>
     <main>
-
         <section>
             <h2>Contáctenos</h2>
-            <form action="mailto:info@lacomercial.com" method="post">
+            <form action="mailto:ingo@lacomercial.com" method="post">
                 <fieldset>
-                    <legend>Por favor, complete los campos.</legend>
+                    <legend>Por favor, complete los campos</legend>
                     <table>
                         <tr>
-                            <td><label for="nombre">* Nombre</label></td>
+                            <td><label for="nombre">* Nombre:</label></td>
                             <td>
                                 <input 
                                 type="text"
@@ -41,18 +40,18 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><label for="direccion">Dirección</label></td>
+                            <td><label for="direccion">Dirección:</label></td>
                             <td>
                                 <input 
                                 type="text"
-                                placeholder="Calle y Número"
+                                placeholder="Calle y número"
                                 name="direccion"
                                 id="direccion"
                                 />
                             </td>
                         </tr>
                         <tr>
-                            <td><label for="telefono">Teléfono</label></td>
+                            <td><label for="telefono">Teléfono:</label></td>
                             <td>
                                 <input 
                                 type="tel"
@@ -63,7 +62,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><label for="email">E-mail</label></td>
+                            <td><label for="email">E-mail:</label></td>
                             <td>
                                 <input 
                                 type="email"
@@ -74,7 +73,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><label for="Localidad">Localidad</label></td>
+                            <td><label for="localidad">Localidad: </label></td>
                             <td>
                                 <input 
                                 type="text"
@@ -85,7 +84,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><label for="Provicia">Provincia</label></td>
+                            <td><label for="provincia">Provincia: </label></td>
                             <td>
                                 <input 
                                 type="text"
@@ -95,9 +94,8 @@
                                 />
                             </td>
                         </tr>
-                        </tr>
                         <tr>
-                            <td><label for="sexo">Sexo:</label></td>
+                            <td><label for="sexo">Sexo: </label></td>
                             <td>
                                 <input 
                                 type="radio"
@@ -105,12 +103,14 @@
                                 id="sexo"
                                 value="Masculino"
                                 /> Masculino
+
                                 <input 
                                 type="radio"
                                 name="sexo"
                                 id="sexo"
                                 value="Femenino"
                                 /> Femenino
+
                                 <input 
                                 type="radio"
                                 name="sexo"
@@ -120,17 +120,18 @@
                             </td>
                         </tr>
                         <tr>
-                             <td><label for="fnac">Fecha de nacimiento</label></td>
-                             <td>
-                                <input type="date"
+                            <td><label for="fnac">Fecha de nacimiento: </label></td>
+                            <td>
+                                <input 
+                                type="date"
                                 name="fnac"
                                 id="fnac"
                                 />
-                             </td>
+                            </td>
                         </tr>
                         <tr>
-                             <td><label for="formapago">Forma de pago:</label></td>
-                             <td>
+                            <td><label for="formapago">Forma de pago: </label></td>
+                            <td>
                                 <select name="formapago" id="formapago">
                                     <option value="Efectivo">Efectivo</option>
                                     <option value="Transferencia">Transferencia</option>
@@ -138,25 +139,27 @@
                                     <option value="Depósito">Depósito</option>
                                     <option value="Rapipago / Pago Fácil">Rapipago / Pago Fácil</option>
                                 </select>
-                             </td>
+                            </td>
                         </tr>
                         <tr>
-                            <td><label for="mensaje">Mensaje</label></td>
+                            <td><label for="mensaje">Mensaje: </label></td>
                             <td>
                                 <textarea 
                                 name="mensaje" 
-                                id="mensaje" 
+                                id="mensaje"
                                 placeholder="Escriba su mensaje aquí"></textarea>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <input type="submit"
-                                value="enviar"
+                                <input 
+                                type="submit"                                
+                                value="Enviar"
                                 />
                             </td>
                             <td>
-                                <input type="reset"
+                                <input 
+                                type="reset"
                                 value="Cancelar"
                                 />
                             </td>
@@ -165,13 +168,10 @@
                     <p>El * indica que el campo es obligatorio.</p>
                 </fieldset>
             </form>
-           
         </section>
     </main>
     <footer>
-        <p>
-            La Comercial - Todos los derechos reservados - 2026
-        </p>
+        <p>La Comercial - Todos los derechos reservados - 2026</p>
     </footer>
 </body>
 </html>
